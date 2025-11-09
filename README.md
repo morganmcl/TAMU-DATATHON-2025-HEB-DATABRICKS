@@ -9,8 +9,8 @@ Another essential feature we took full advantage of was Databricks’ model agno
 A final benefit we extensively leveraged was the ease with which Databricks enabled us to manipulate JSON files, especially in relation to Gen AI. A key part of our project was parsing the provided data in the precise way that maximized effectiveness. This was near trivial because the provided sql interface let us directly change datasets already integrated into AI pipelines.
 
 Here are some more specific technical details on our implementation:
--We used the git ingestion capability to directly get the provided JSON files in the platform, which were then ingested by a serverless data warehouse
--We used the SQL interface to manipulate the provided categories to create an effective aggregate of categories.
--We created serving endpoints and models to make custom embedding approaches, which were then applied to datasets.
--We extensively used the Databricks.vector_search class to interface with vector embeddings, especially to compute (as we learned) L2 similarity scores to queries using similarity_search() – the process that formed the core of our product.
--We used the gen AI capabilities to build simple RAG models that attempted to create better aggregate categories for embedding.
+#We used the git ingestion capability to directly get the provided JSON files in the platform, which were then ingested by a serverless data warehouse
+#We used the SQL interface to manipulate the provided categories to create an effective aggregate of categories.
+#We created serving endpoints and models to make custom embedding approaches, which were then applied to datasets.
+#We extensively used the Databricks.vector_search class to interface with vector embeddings, especially to compute (as we learned) L2 similarity scores to queries using similarity_search() – the process that formed the core of our product.
+#We used the gen AI capabilities to build simple RAG models that attempted to create better aggregate categories for embedding.
